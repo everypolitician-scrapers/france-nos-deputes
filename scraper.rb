@@ -58,12 +58,5 @@ def scrape_list(url)
   end
 end
 
-term = {
-  id: '14',
-  name: 'XIVe législature de la Ve République',
-  start_date: '2012-06-20',
-}
-ScraperWiki.save_sqlite([:id], term, 'terms')
-
 @URL = 'http://www.nosdeputes.fr/deputes/json'
 scrape_list(@URL)
